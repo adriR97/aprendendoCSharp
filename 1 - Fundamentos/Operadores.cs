@@ -3,45 +3,53 @@ using System;
 namespace Operadores {
 	class Program {
 		static void Main(string[] args){
-		    
-		    int n1 = 10, n2 = 30;
-		    
-			/* Operadores Aritméticos */
-			Console.WriteLine("Operadores Aritméticos");
-			Console.WriteLine(10 + 20); //soma
-			Console.WriteLine(30 - 20); //subtração
-			Console.WriteLine(10 * 20); //multiplicação
-			Console.WriteLine(20 / 5);  //divisão
-			Console.WriteLine(5 % 2);   //módulo -> resto da divisão
-			n1++;  //incremento
-			Console.WriteLine(n1);
-			n2--;  //decremento
-			Console.WriteLine(n2);
 			
 			/* Operadores de Atribuição */
-			Console.WriteLine("\nOperadores de Atribuição");
-			n1 = 20;
-			Console.WriteLine(n1);
-			Console.WriteLine(n1 += 5); // 20 + 5 = 25
-			Console.WriteLine(n1 -= 5); // 25 - 5 = 20
-			Console.WriteLine(n1 *= 5); // 20 * 5 = 100
-			Console.WriteLine(n1 /= 5); // 100 / 5 = 20
-			Console.WriteLine(n1 %= 3); //20 % 3 = 2
+		
+			int numeroAtribuido = 20;
+			Console.WriteLine("----- Operadores de Atribuição -----");
+			Console.WriteLine("Valor atribuído à variável: " + numeroAtribuido);
+			Console.WriteLine("+= : 20 + 5 = " + (numeroAtribuido += 5));
+			Console.WriteLine("-= : 25 - 5 = " + (numeroAtribuido -= 5));
+			Console.WriteLine("*= : 20 * 5 = " + (numeroAtribuido *= 5));
+			Console.WriteLine("/= : 100 / 5 = " + (numeroAtribuido /= 5));
+			Console.WriteLine("%= : 20 % 3 = " + (numeroAtribuido %= 3));
+			
+			/* Operadores Aritméticos */
+		
+			Console.WriteLine("\n------ Operadores Aritméticos ------");
+			Console.WriteLine("Soma: 10 + 20 = " + (10 + 20));
+			Console.WriteLine("Subtração: 30 - 20 = " + (30 - 20));
+			Console.WriteLine("Multiplicação: 10 * 20 = " + (10 * 20));
+			Console.WriteLine("Divisão: 20 / 5 = " + (20 / 5));
+			Console.WriteLine("Módulo - Resto da divisão: 5 % 2 = " + (5 % 2));
+			numeroAtribuido++;
+			Console.WriteLine("Incremento: " + numeroAtribuido);
+			numeroAtribuido--;
+			Console.WriteLine("Decremento: " + numeroAtribuido);
 			
 			/* Operadores de Comparação */
-			Console.WriteLine("\nOperadores de Comparação");
-			Console.WriteLine(5 == 5);  //igual
-			Console.WriteLine(5 != 5);  //diferente
-			Console.WriteLine(5 > 4);   //maior que
-			Console.WriteLine(5 < 2);   //menor que
-			Console.WriteLine(5 >= 5);  //maior ou igual
-			Console.WriteLine(5 <= 5);  //menor ou igual 
+        
+			Console.WriteLine("\n----- Operadores de Comparação -----");
+			Console.WriteLine("5 é igual a 5: " + (5 == 5));
+			Console.WriteLine("5 é diferente de 5: " + (5 != 5)); 
+			Console.WriteLine("5 é maior que 4: " + (5 > 4));   
+			Console.WriteLine("5 é menor que 2: " + (5 < 2));   
+			Console.WriteLine("5 maior ou igual a 5: " + (5 >= 5));  
+			Console.WriteLine("5 menor ou igual a 3: " + (5 <= 3));
 			
-			/* Operadores de Lógica 
-			   a && b   -> os dois tem que ser verdadeiros
-			   a || b   -> somente um verdadeiro
-			   !(a < b) -> inverso do resultado
- 			*/
-		}
+			/* Operadores de Lógica */
+			
+			Console.WriteLine("\n------- Operadores de Lógica -------");
+        
+			if((5 > 2) && (5 < 8))
+				Console.WriteLine("&&: As duas condições devem ser verdadeiras");
+			
+			if((5 > 2) || (5 < 1))
+				Console.WriteLine("||: Somente uma condição deve ser verdadeira");
+				
+			if(!(5 < 2))
+				Console.WriteLine("!:  Inverte o resultado");
+			}
 	}	
 }

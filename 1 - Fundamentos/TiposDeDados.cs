@@ -1,8 +1,11 @@
 using System;
 
-namespace TiposDeDados {
-	class Program {
-		static void Main(string[] args){
+namespace TiposDeDados 
+{
+	class Program 
+	{
+		static void Main(string[] args)
+		{
 			
 			/* Tipos Primitivos */
 			byte b = 127;

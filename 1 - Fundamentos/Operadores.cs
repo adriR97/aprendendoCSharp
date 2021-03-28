@@ -1,8 +1,11 @@
 using System;
 
-namespace Operadores {
-	class Program {
-		static void Main(string[] args){
+namespace Operadores 
+{
+	class Program 
+	{
+		static void Main(string[] args)
+		{
 			
 			/* Operadores de Atribuição */
 		
@@ -42,14 +45,15 @@ namespace Operadores {
 			
 			Console.WriteLine("\n------- Operadores de Lógica -------");
         
-			if((5 > 2) && (5 < 8))
+			if ((5 > 2) && (5 < 8))
 				Console.WriteLine("&&: As duas condições devem ser verdadeiras");
 			
-			if((5 > 2) || (5 < 1))
+			if ((5 > 2) || (5 < 1))
 				Console.WriteLine("||: Somente uma condição deve ser verdadeira");
 				
-			if(!(5 < 2))
+			if (!(5 < 2))
 				Console.WriteLine("!:  Inverte o resultado");
-			}
+
+		}
 	}	
 }

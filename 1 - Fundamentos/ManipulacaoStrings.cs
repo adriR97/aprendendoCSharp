@@ -1,11 +1,14 @@
 using System;
 
-namespace ManipulacaoStrings {
-    class Program {
-        static void Main(string[] args) {
+namespace ManipulacaoStrings 
+{
+	class Program 
+	{
+        	static void Main(string[] args) 
+		{
             
 			/* Declarando uma variável do tipo string */
-            string nome = "Adriane";
+            		string nome = "Adriane";
 			
 			/* Métodos da classe string */		
 			Console.WriteLine("Letras maiúsculas: " + nome.ToUpper());
@@ -37,11 +40,11 @@ namespace ManipulacaoStrings {
 			Console.WriteLine("Dados da string no array -> " + string.Join(", ", textoSeparado));
 			
 			/* Escape de caracteres especiais */
-            /*
-                ' -> \'
-                " -> \"
-                \ -> \\
-            */
-        }
-    }
+            		/*
+                		' -> \'
+                		" -> \"
+                		\ -> \\
+            		*/
+        	}
+    	}
 }

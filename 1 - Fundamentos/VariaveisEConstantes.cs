@@ -1,8 +1,11 @@
 using System;
 
-namespace VariaveisEConstantes {
-	class Program {
-		static void Main(string[] args){
+namespace VariaveisEConstantes 
+{
+	class Program 
+	{
+		static void Main(string[] args)
+		{
 			
 			/* Variáveis */
 			bool verdadeiro = false;
